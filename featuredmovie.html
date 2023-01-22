@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasham Movie Database</title>
+    <link rel="stylesheet" href="dbstyle.css">
+    <style>@import url('https://fonts.cdnfonts.com/css/harry-potter');</style>
+</head>
+<body>
+    <!--NAVIGATION-->
+    <div class="nav" id="nav">
+        <a href="index.html"><img src="images/logos/hmc-logo-6.png" alt="" class="nav__logo"/></a>
+        <a href="account.html"><button class="banner__button">Log Out</button></a>
+    </div>
+    <!--HEADER-->
+    <div class="banner2">
+        <div class="banner__contents">
+            <h1 class="banner__title">Harry Potter</h1>
+            <div class="banner__buttons">
+                <a href="index.html"><button class="banner__button">Back To Homepage</button></a>
+            </div>
+            <div class="banner__description">
+                Experience The Magic of Hogswarts... From Your Own Home! Stream The 8-Film Collection, And Follow The Characters of This Beloved Franchise, As They Navigate The Wizarding World!
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+    <!--Featured Movies-->
+    <div class="row">
+        <h2>Stream The Eight-Film Collection</h2>
+        <div class="row__posters">
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212403&authkey=AIWBmp7IwcXAlho','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-1.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212405&authkey=APkdTa1Pr61Vw7k','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-2.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212404&authkey=AKDaXd0VUIeWFKs','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-3.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212408&authkey=AHv42zDQ2kFmv88','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-4.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212406&authkey=AB4dXUbqrL01fvA','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-5.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212407&authkey=AOApk5NNqUTCYQE','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-6.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212409&authkey=ALXhkHwI9yMus3k','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-7.jpg" alt="" class="row__poster row__posterLarge"></button>
+            <button onclick="window.open('https://onedrive.live.com/embed?cid=85C41F167317EC7C&resid=85C41F167317EC7C%212410&authkey=AKtsbqppVTTnXUc','_blank');" id="myButton" class=" row__poster row__posterLarge movie__button" target="_blank"><img src="images/hp-collection/hp-8.jpg" alt="" class="row__poster row__posterLarge"></button>
+        </div>
+    </div>
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+            nav.classList.add('nav__black');
+        } else {
+            nav.classList.remove('nav__black')
+        }
+        })
+    </script>
+</body>
+</html>
+
+<!-- View This Site for Button Pop-Up Help https://stackoverflow.com/questions/34082002/html-button-opening-link-in-new-tab-->

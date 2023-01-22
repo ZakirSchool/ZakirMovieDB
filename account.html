@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasham Movie Database</title>
+   <!----<title>Login Form Design | CodeLab</title>---->
+    <link rel="stylesheet" href="account.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title"><img src="Images/logos/hmc-logo-6.png" height="75px"></div>
+      <form action="#">
+        <div class="field">
+          <input type="text" name="userid">
+          <label>Username</label>
+        </div>
+        <div class="field">
+          <input type="password" name="password">
+          <label>Password</label>
+        </div>
+        <div class="content">
+        <div class="field"><br>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+        </div>
+      </form>
+      <script language="javascript">
+        function check(form) { /*function to check userid & password*/
+            /*the following code checkes whether the entered userid and password are matching*/
+            if(form.userid.value == "HMC Movies" && form.password.value == "HMCMovieCollection") {
+                window.open('index.html', '_self')/*opens the target page while Id & password matches*/
+            }
+            else {
+                alert("Error Password or Username")/*displays error message*/
+            }
+        }
+    </script>
+    </div>
+  </body>
+</html>
+
+<!--Look At For More Info: https://stackoverflow.com/questions/11930253/how-to-create-a-login-page-for-a-user-that-checks-their-password-on-the-client-s-->
