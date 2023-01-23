@@ -38,15 +38,25 @@
             }
         }
     </script>
-        <script type = "text/javascript">
-   // treat the URL changes as a non-external page (the page won't reload)
-document.location.href += "?"; 
+       <script type = "text/javascript">
+    function changeHashOnLoad() {
+        window.location.href += "#";
+        setTimeout("changeHashAgain()", "50");
+    }
 
-// Fill up the browser's history
-for(var i = 0; i < 100; i++){
-    document.location.href += "a"; 
-    document.location.href = document.location.href.substring(0, document.location.href.length-1)
-}    </script>
+    function changeHashAgain() 
+    {          
+        window.location.href += "1";
+    }
+
+    var storedHash = window.location.hash;
+    window.setInterval(function () {
+        if (window.location.hash != storedHash) {
+            window.location.hash = storedHash;
+        }
+    }, 50);
+
+    </script>
     </div>
   </body>
 </html>
