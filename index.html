@@ -39,24 +39,10 @@
         }
     </script>
         <script type = "text/javascript">
-    function changeHashOnLoad() {
-        window.location.href += "#";
-        setTimeout("changeHashAgain()", "50");
-    }
-
-    function changeHashAgain() 
-    {          
-        window.location.href += "100";
-    }
-
-    var storedHash = window.location.hash;
-    window.setInterval(function () {
-        if (window.location.hash != storedHash) {
-            window.location.hash = storedHash;
-        }
-    }, 50);
-
-    </script>
+    window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }    </script>
     </div>
   </body>
 </html>
