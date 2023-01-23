@@ -39,10 +39,14 @@
         }
     </script>
         <script type = "text/javascript">
-    window.history.forward();
-        function noBack() {
-            window.history.forward();
-        }    </script>
+   // treat the URL changes as a non-external page (the page won't reload)
+document.location.href += "?"; 
+
+// Fill up the browser's history
+for(var i = 0; i < 100; i++){
+    document.location.href += "a"; 
+    document.location.href = document.location.href.substring(0, document.location.href.length-1)
+}    </script>
     </div>
   </body>
 </html>
